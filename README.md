@@ -47,3 +47,24 @@ Time:        1.937 s, estimated 2 s
 ```
 
 #### There is no coverage report of testInVm.js.
+
+
+# C8 works
+
+However, it works with C8.
+
+```
+c8 node runnerForC8.js
+```
+### Result
+
+```
+------------------|---------|----------|---------|---------|-------------------
+File              | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+------------------|---------|----------|---------|---------|-------------------
+All files         |     100 |    85.71 |     100 |     100 |                   
+ runnerForC8.js   |     100 |      100 |     100 |     100 |                   
+ testInRequire.js |     100 |      100 |     100 |     100 |                   
+ testInVm.js      |     100 |       50 |     100 |     100 | 2                 
+------------------|---------|----------|---------|---------|-------------------
+```
